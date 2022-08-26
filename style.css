@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+}
+
+header {
+    width: 120px;
+    height: 48px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+header img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 40px;
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 25px;
+}
+
+.text-area::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+}
+
+.text-area {
+    position: absolute;
+    width: 680px;
+    height: 288px;
+    left: 240px;
+    top: 168px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    border: none;
+    background-color: #F3F5FC;
+    outline: none;
+}
+
+.div-alert {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    width: 256px;
+    height: 18px;
+    left: 240px;
+    top: 851px;
+}
+
+.div-alert img {
+    width: 16px;
+    height: 16px;
+}
+
+.div-alert h6 {
+    width: 248px;
+    height: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+
+.div-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+}
+
+.div-buttons button {
+    width: 280px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.div-buttons button:first-child {
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: #FFFFFF;
+}
+
+.div-buttons button:last-child {
+    box-sizing: border-box;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+}
+
+.div-hidden img {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+}
+
+.box-message {
+    position: absolute;
+    top: 520px;
+    left: 30px;
+}
+
+.box-message h2 {
+    width: 336px;
+    height: 58px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+.box-message h3 {
+    width: 336px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.div-show {
+    display: none;
+}
+
+.div-show textarea {
+    position: absolute;
+    width: 336px;
+    height: 781px;
+    left: 30px;
+    top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    outline: none;
+    border: none;
+}
+
+.div-show button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 32px;
+    top: 850px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+}
+
+.rectangle {
+    position: relative;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: -16px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    header {
+        position: absolute;
+        width: 375px;
+        height: 50px;
+        left: 0;
+        top: 0;
+    }
+
+    header img {
+        position: absolute;
+        left: -20px;
+        top: 5px;
+    }
+
+    .text-area {
+        position: absolute;
+        width: 21.5rem;
+        left: 16px;
+        top: 152px;
+    }
+
+    .div-alert {
+        position: absolute;
+        width: 254px;
+        height: 18px;
+        left: 16px;
+        top: 451px;
+    }
+
+    .div-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+
+        position: absolute;
+        width: 343px;
+        height: 158px;
+        left: 16px;
+        top: 485px;
+    }
+
+    .div-hidden img {
+        display: none;
+    }
+
+    .box-message {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: -5px;
+        top: 80px;
+    }
+
+    #result-message {
+        position: absolute;
+        width: 290px;
+        height: 250px;
+        left: 16px;
+        top: 16px;
+        font-size: 24px;
+    }
+
+    #btnCopy {
+        position: absolute;
+        width: 279px;
+        height: 67px;
+        top: 310px;
+        left: 1.5rem;
+    }
+
+    .rectangle {
+        position: relative;
+        width: 327px;
+        height: 300px;
+        left: 16px;
+        top: 660px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+
+    body {
+        height: 100%;
+    }
+
+    header img {
+        position: absolute;
+        width: 120px;
+        height: 48px;
+        left: 40px;
+        top: 73px;
+    }
+
+    .div-hidden img {
+        display: none;
+    }
+
+    .text-area {
+        position: absolute;
+        width: 24rem;
+        height: 10rem;
+        left: 40px;
+        top: 240px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 150%;
+        color: #0A3871;
+    }
+
+    .div-hidden img {
+        display: none;
+    }
+
+    .div-alert {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+        position: absolute;
+        width: 254px;
+        height: 18px;
+        left: 40px;
+        top: 836px;
+    }
+
+    .div-buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 688px;
+        height: 67px;
+        left: 40px;
+        top: 870px;
+    }
+
+    .box-message {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        gap: 16px;
+        width: 39rem;
+        height: 4rem;
+        position: absolute;
+        left: 5rem;
+        top: 63rem;
+    }
+
+    .box-message h2 {
+        width: 624px;
+        height: 29px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #343A40;
+    }
+
+    .box-message h3 {
+        width: 624px;
+        height: 24px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .div-show textarea {
+        position: absolute;
+        width: 42.5rem;
+        height: 11rem;
+        left: 3.2rem;
+        top: 64rem;
+    }
+
+    .div-show button {
+        left: 9rem;
+        top: 83rem;
+        width: 32rem;
+        height: 65px;
+        font-size: 24px;
+    }
+
+    .rectangle {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 32px;
+        position: absolute;
+        width: 40rem;
+        height: 21.5rem;
+        left: 2.5rem;
+        top: 63rem;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+    }
+}
